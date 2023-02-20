@@ -52,15 +52,15 @@
         <p>Plants names will break first, because col-sm-2 has pixel range of 768 and col-md has pixel range of 982</p>
         <h4>Responsive Images</h4>
         <div class="container">
-            <img class="img-fluid" src="Kadsusa.jpg" height="250px" width="250px"/>
-            <img class="img-fluid" src="Olea.jpg" height="250px" width="250px"/>
-            <img class="img-fluid" src="Lamium.JPG" height="250px" width="250px"/>
+            <img class="img-fluid" src="Kadsusa.jpg" height="250" width="250"/>
+            <img class="img-fluid" src="Olea.jpg" height="250" width="250"/>
+            <img class="img-fluid" src="Lamium.JPG" height="250" width="250"/>
         </div>
         <h4>Thumbnail Images</h4>
         <div class="container">
-            <img class="img-thumbnail" src="Kadsusa.jpg" height="250px" width="250px"/>
-            <img class="img-thumbnail" src="Olea.jpg" height="250px" width="250px"/>
-            <img class="img-thumbnail" src="Lamium.JPG" height="250px" width="250px"/>
+            <img class="img-thumbnail" src="Kadsusa.jpg" height="250" width="250"/>
+            <img class="img-thumbnail" src="Olea.jpg" height="250" width="250"/>
+            <img class="img-thumbnail" src="Lamium.JPG" height="250" width="250"/>
         </div>
         <table class="table table-striped table-hover table-bordered table-sm" >
 
@@ -141,16 +141,40 @@
         </div>
     </div>
     <br>
-    <div class="dropdown">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="basic.html">Interesting Plants</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="basic.html">Basic Page</a>
-            <a class="dropdown-item" href="advanced.html">Advanced Page</a>
+
+    <div class="dropdown">
+        <button type="button" class ="btn btn-primary dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown Button 
+        </button>
+
+        <button type="button" class="btn btn-primary navbar-toggler" data-bs-toggle="dropdown" aria-expanded="false">
+            Overflow
+        </button>
+
+        
+
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="basic.html">Bootstart BASIC</a>
+            <a class="dropdown-item" href="advanced.html">Bootstart ADVANCED</a>
         </div>
     </div>
-    <br>
+
+    <div class="collapse navbar-collapse" id="navbar-scroll">
+        <ul class="navbar-nav mr-auto" aria-labelledby="navbarScrollingDropdown">
+            <li class="nav-link">
+                <a class="nav-link active" active-current="page" href="basic.html">BASIC</a>
+            </li>
+            <li class="nav-link">
+                <a class="nav-link active" active-current="page" href="advanced.html">ADVANCED</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
     <form>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
